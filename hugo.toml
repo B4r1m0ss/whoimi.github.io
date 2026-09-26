@@ -1,4 +1,74 @@
-baseURL = 'https://github.com/B4r1m0ss/whoimi.github.io.git'
-locale = 'en-us'
-title = 'Who im i ?'
+# ===== 基础配置 =====
+baseURL = "https://b4r1m0ss.github.io/whoimi/"          # 例如 https://whoimi.github.io/
+languageCode = "zh-cn"
+title = "个人BLOG | 我执 | Who im i ?"
 theme = "ananke"
+
+# 如果使用 GitHub Pages 从 docs 文件夹发布，取消下一行注释
+# publishDir = "docs"
+
+# 是否在构建时包含草稿文章，默认 false
+# buildDrafts = false
+
+# 是否包含未来日期的文章，默认 false
+# buildFuture = false
+
+
+# ===== 站点参数 =====
+[params]
+  description = "一个寻找自我的人的树洞"
+  author = "Yuxiang"
+
+  # 网站图标和首页特色图片，没有就留空或注释掉
+#  favicon = "<favicon 路径，如 /images/favicon.ico>"
+#  featured_image = "<首页特色图片路径，如 /images/hero.jpg>"
+
+  # 背景颜色，可选 bg-white、bg-near-white、bg-light-gray 等
+  background_color_class = "bg-white"
+
+  # 是否显示阅读时间和社交图标
+  show_reading_time = true
+  show_social_icons = true
+
+  # 首页显示最近文章的数量
+  recent_posts_number = 3
+
+  # 指定哪些 section 的文章显示在首页
+  mainSections = ["content/posts"]
+
+  # 社交链接，按需取消注释并填写
+  [[params.social]]
+  name = "github"
+  url = "https://github.com/b4r1m0ss"
+  #
+  # [[params.social]]
+  #   name = "twitter"
+  #   url = "https://twitter.com/<你的用户名>"
+  #
+  [[params.social]]
+  name = "email"
+  url = "mailto:Dr.Yuxiang.Chen@gmail.com"
+
+
+# ===== 导航菜单 =====
+[[menu.main]]
+  name = "首页"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "文章"
+  url = "/posts/"
+  weight = 2
+
+[[menu.main]]
+  name = "关于"
+  url = "/about/"
+  weight = 3
+
+
+# ===== 代码高亮（可选） =====
+[markup]
+  [markup.highlight]
+    style = "monokai"
+    lineNos = true
