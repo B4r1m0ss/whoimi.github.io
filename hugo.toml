@@ -1,0 +1,4 @@
+baseURL = 'https://github.com/B4r1m0ss/whoimi.github.io.git'
+locale = 'en-us'
+title = 'Who im i ?'
+theme = "PaperMod"
